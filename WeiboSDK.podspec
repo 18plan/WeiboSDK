@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.resource     = "SDK/WeiboSDK.bundle"
   s.vendored_library = "SDK/libWeiboSDK.a"
   s.frameworks = 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-  s.libraries = "sqlite3", "z", "CoreTelephony", 
+  s.libraries = "sqlite3", "z"
   s.requires_arc = false
 
 end
