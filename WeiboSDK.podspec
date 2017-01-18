@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = "6.0"
   s.source       = { :git => "https://github.com/18plan/WeiboSDK.git", :tag => s.version }
-  s.public_header_files = "SDK/*.h"
+  s.source_files = "SDK/*.h"
   s.resource     = "SDK/WeiboSDK.bundle"
   s.vendored_library = "SDK/libWeiboSDK.a"
   s.frameworks = "ImageIO", "AdSupport"
