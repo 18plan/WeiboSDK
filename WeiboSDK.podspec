@@ -9,13 +9,14 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.authors      = { '18plan' => 'https://github.com/18plan' }
-  s.platform     = :ios, "6.0"
+  s.platform     = :ios
+  s.ios.deployment_target = "6.0"
   s.source       = { :git => "https://github.com/18plan/WeiboSDK.git", :tag => s.version }
-  s.source_files = "SDK/*.{h,m}"
+  s.public_header_files = "SDK/*.h"
   s.resource     = "SDK/WeiboSDK.bundle"
-  s.ios.vendored_library = "SDK/libWeiboSDK.a"
-  s.frameworks = "ImageIO", "SystemConfiguration", "CoreText", "QuartzCore", "Security", "UIKit", "Foundation", "CoreGraphics", "CoreTelephony"
-  s.libraries = "z", "sqlite3"
+  s.vendored_library = "SDK/libWeiboSDK.a"
+  s.frameworks = "ImageIO", "AdSupport"
+  s.libraries = "sqlite3"
   s.requires_arc = false
 
 end
